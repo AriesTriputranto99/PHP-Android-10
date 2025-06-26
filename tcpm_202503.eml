@@ -1,0 +1,86 @@
+Return-Path: <wwwrun@rfcpa.rfc-editor.org>
+X-Original-To: tcpm@ietf.org
+Delivered-To: tcpm@mail2.ietf.org
+Received: from rfcpa.rfc-editor.org (unknown [167.172.21.234])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature ECDSA (P-256) server-digest SHA256)
+	(No client certificate requested)
+	by mail2.ietf.org (Postfix) with ESMTPS id B2552DA7682;
+	Tue, 18 Mar 2025 01:35:06 -0700 (PDT)
+Received: by rfcpa.rfc-editor.org (Postfix, from userid 461)
+	id 737871EEE81; Tue, 18 Mar 2025 01:35:06 -0700 (PDT)
+To: bart@bedrijfzondernaam.nl, ycheng@google.com, hkchu@google.com,
+ sivasankar@cs.ucsd.edu, arvind@google.com
+From: RFC Errata System <rfc-editor@rfc-editor.org>
+Content-Type: text/plain; charset=UTF-8
+Message-Id: <20250318083506.737871EEE81@rfcpa.rfc-editor.org>
+Date: Tue, 18 Mar 2025 01:35:06 -0700 (PDT)
+Message-ID-Hash: FFVNIJZVPZIGXFHMPVI3MG7DLBRMU7AC
+X-Message-ID-Hash: FFVNIJZVPZIGXFHMPVI3MG7DLBRMU7AC
+X-MailFrom: wwwrun@rfcpa.rfc-editor.org
+X-Mailman-Rule-Misses: dmarc-mitigation; no-senders; approved; emergency;
+ loop; banned-address; member-moderation; header-match-tcpm.ietf.org-0;
+ nonmember-moderation; administrivia; implicit-dest; max-recipients; max-size;
+ news-moderation; no-subject; digests; suspicious-header
+CC: zaheduzzaman.sarker@nokia.com, iesg@ietf.org, tcpm@ietf.org,
+ rfc-editor@rfc-editor.org
+X-Mailman-Version: 3.3.9rc6
+Precedence: list
+Subject: =?utf-8?q?=5Btcpm=5D_=5BErrata_Held_for_Document_Update=5D_RFC7413_=288015?=
+	=?utf-8?q?=29?=
+List-Id: TCP Maintenance and Minor Extensions Working Group <tcpm.ietf.org>
+Archived-At: 
+ <https://mailarchive.ietf.org/arch/msg/tcpm/GenimU2OSecDnua8NUvdIxFABO8>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/tcpm>
+List-Help: <mailto:tcpm-request@ietf.org?subject=help>
+List-Owner: <mailto:tcpm-owner@ietf.org>
+List-Post: <mailto:tcpm@ietf.org>
+List-Subscribe: <mailto:tcpm-join@ietf.org>
+List-Unsubscribe: <mailto:tcpm-leave@ietf.org>
+
+The following errata report has been held for document update 
+for RFC7413, "TCP Fast Open". 
+
+--------------------------------------
+You may review the report below and at:
+https://www.rfc-editor.org/errata/eid8015
+
+--------------------------------------
+Status: Held for Document Update
+Type: Technical
+
+Reported by: Bart Overkamp <bart@bedrijfzondernaam.nl>
+Date Reported: 2024-07-02
+Held by: Zaheduzzaman Sarker (IESG)
+
+Section: 4.2.2
+
+Original Text
+-------------
+      b. Otherwise, include the Fast Open option with the cookie of the
+         server.  Include any data up to the cached server MSS or
+         default 536 bytes.
+
+Corrected Text
+--------------
+      b. Otherwise, include the Fast Open option with the cookie of the
+         server.  Include any data up to the cached server MSS or
+         default: 536 bytes for IPv4 or 1220 bytes for IPv6.
+
+Notes
+-----
+default MSS is IP protocol-version-specific.
+
+Based on the discussion https://mailarchive.ietf.org/arch/msg/tcpm/mJC7Lz5GE8RmkJ_cJWaiRIn-sC8/, this is HFDU.
+
+--------------------------------------
+RFC7413 (draft-ietf-tcpm-fastopen-10)
+--------------------------------------
+Title               : TCP Fast Open
+Publication Date    : December 2014
+Author(s)           : Y. Cheng, J. Chu, S. Radhakrishnan, A. Jain
+Category            : EXPERIMENTAL
+Source              : TCP Maintenance and Minor Extensions
+Stream              : IETF
+Verifying Party     : IESG
+
